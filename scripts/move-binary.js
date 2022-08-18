@@ -18,8 +18,8 @@ async function main() {
     console.error('Failed to determine platform target triple')
   }
   fs.renameSync(
-    `../src-tauri/binaries/volley_score_api${extension}`,
-    `../src-tauri/binaries/volley_score_api-${targetTriple}${extension}`
+    `./src-tauri/binaries/volley_score_api${extension}`,
+    `./src-tauri/binaries/volley_score_api-${targetTriple}${extension}`
   )
 }
 
