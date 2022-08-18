@@ -1,0 +1,15 @@
+{
+  "name": "volley-stats-desktop-score-api",
+  "version": "0.1.0",
+  "private": true,
+  "bin": "src/index.js",
+  "pkg": {
+    "assets": [
+      "src/**/*"
+    ]
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1"
+  }
+}
