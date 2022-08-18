@@ -1,0 +1,22 @@
+{
+  "name": "volley-stats-desktop-score-api",
+  "version": "0.1.0",
+  "private": true,
+  "bin": "src/index.js",
+  "pkg": {
+    "assets": [
+      "src/**/*"
+    ]
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1"
+  },
+  "scripts": {
+    "package": "pkg package.json --output ../src-tauri/binaries/volley_score_api && node ./scripts/move-binary.js"
+  },
+  "devDependencies": {
+    "execa": "5.1.1",
+    "pkg": "5.2.1"
+  }
+}
