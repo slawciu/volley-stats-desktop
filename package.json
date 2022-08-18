@@ -23,8 +23,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "tauri": "tauri",
-    "tauri-before-build": "pkg ./volley-score-api/package.json --output ./src-tauri/binaries/volley_score_api && node ./scripts/move-binary.js; npm run build",
-    "tauri-before-dev": "pkg ./volley-score-api/package.json --output ./src-tauri/binaries/volley_score_api && node ./scripts/move-binary.js; npm run start"
+    "tauri-before-build": "pkg ./volley-score-api/package.json --output ./src-tauri/binaries/volley_score_api && node ./scripts/move-binary.js && npm run build",
+    "tauri-before-dev": "pkg ./volley-score-api/package.json --output ./src-tauri/binaries/volley_score_api && node ./scripts/move-binary.js && npm run start"
   },
   "eslintConfig": {
     "extends": [
