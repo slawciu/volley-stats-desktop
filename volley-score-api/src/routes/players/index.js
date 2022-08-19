@@ -50,7 +50,7 @@ const deletePlayer = (io) => async (req, res) => {
     where: { "payload.id": playerId },
   });
   io.emit("player-deleted", teamId);
-  return res.sendStatus(201);
+  return res.sendStatus(200);
 };
 
 module.exports = {

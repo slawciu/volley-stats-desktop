@@ -33,7 +33,7 @@ describe("Should serve endpoints", function () {
 
   it("POST /games", async function () {
     const response = await request(server).post("/api/games");
-    expect(response.statusCode).toBe(201);
+    expect(response.statusCode).toBe(200);
   });
 
   it("GET /games/:gameId", async function () {

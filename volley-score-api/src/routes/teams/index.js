@@ -83,6 +83,10 @@ const getTeamById = async (req, res) => {
     ],
   });
 
+  if (!team) {
+    return res.json();
+  }
+
   const players = await Player.findAll({
     where: { "payload.teamId": req.params.teamId },
 

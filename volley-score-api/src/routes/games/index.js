@@ -44,7 +44,7 @@ const getGameById = async (req, res) => {
   });
 
   if (!gameModel) {
-    return res.sendStatus(404);
+    return res.json(gameModel);
   }
 
   return res.json(gameModel.payload);
@@ -56,7 +56,7 @@ const getGameDetails = async (req, res) => {
   });
 
   if (!gameModel) {
-    return res.sendStatus(404);
+    return res.json(gameModel);
   }
 
   return res.json({
