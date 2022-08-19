@@ -24,3 +24,4 @@ yarn-error.log*
 
 # volley-score-api binaries
 src-tauri/binaries
+vs-db.sqlite
