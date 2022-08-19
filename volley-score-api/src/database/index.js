@@ -1,6 +1,6 @@
 const uuid = require("uuid").v4;
 const { Sequelize } = require("sequelize");
-const sqlite3 = require("sqlite3");
+const sqlite3 = require("@vscode/sqlite3");
 
 const sequelize = new Sequelize(
   "volley-stats",
@@ -8,6 +8,7 @@ const sequelize = new Sequelize(
   "IWil1ChangeItL4ter",
   {
     dialect: "sqlite",
+    dialectModule: sqlite3,
     storage: "vs-db.sqlite",
     dialectOptions: {},
   }
