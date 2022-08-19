@@ -1,10 +1,17 @@
 const express = require("express");
 const cors = require("cors");
+const bodyParser = require("body-parser");
 
 const app = express();
 const port = 3004;
 
-app.use(cors());
+const corsOptions = {
+  origin: "*",
+  optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
+
+app.use(bodyParser.json());
+app.use(cors(corsOptions));
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
@@ -60,7 +67,7 @@ app.get("/api/games/:gameId/details", (res, req) => {
 });
 
 const server = app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`Volley Score Local Server is running! (${port})`);
 });
 
 module.exports = {
