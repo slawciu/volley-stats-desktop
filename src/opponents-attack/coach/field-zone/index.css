@@ -1,0 +1,124 @@
+.zone {
+  min-height: 12vh;
+}
+
+.zone-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  min-width: 14vw;
+}
+
+.home {
+  justify-content: center;
+}
+
+.buttons-with-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttons-in-zone {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.zone-rate {
+  font-size: 4vw;
+}
+
+.zone-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.total-in-zone {
+  font-size: 3vw;
+}
+
+.zone-variants {
+  display: grid;
+  height: 100%;
+  outline: solid;
+  outline-width: 2px;
+}
+
+.many {
+  grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (min-width: 1200px) {
+  .zone-rate {
+    font-size: 2vw;
+  }
+  
+  .total-in-zone {
+    font-size: 1vw;
+  }
+
+  .zone-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    min-width: 0px;
+  }
+
+  .many {
+    grid-template-columns: auto auto;
+    
+  }
+  .many .zone-rate {
+    font-size: 1vw;
+    font-weight: 500;
+  }
+}
+
+.white {
+ background-color: white;
+}
+
+.green {
+ background-color: green;
+}
+
+.light-green {
+  background-color: yellowgreen;
+ 
+ }
+
+ .yellow {
+   background-color: yellow;
+ }
+
+ .light-yellow {
+   background-color: lightyellow;
+ }
+
+ .orange {
+   background-color: orangered;
+ }
+
+ .light-orange {
+   background-color: orange;
+ }
+
+ .red {
+   background-color: red;
+ }
+
+ .light-red {
+   background-color: coral;
+ }
+
+ .spacing {
+   height: 20px;
+ }

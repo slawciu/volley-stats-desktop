@@ -1,0 +1,36 @@
+.control-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.center {
+  justify-content: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-game-container {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  width: 96vw;
+  padding: 2vw;
+}
+
+.scouting-game {
+  width: 224px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,69 @@
+.zone {
+  min-height: 12vh;
+}
+
+.zone-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  min-width: 14vw;
+}
+
+.zone-rate {
+  font-size: 4vw;
+}
+
+.total-in-zone {
+  font-size: 3vw;
+}
+
+.zone-variants {
+  display: grid;
+  height: 100%;
+  outline: solid;
+  outline-width: 2px;
+}
+
+.many {
+  grid-template-columns: 1fr 1fr;
+}
+
+.white {
+ background-color: white;
+}
+
+.green {
+ background-color: green;
+}
+
+.light-green {
+  background-color: yellowgreen;
+ 
+ }
+
+ .yellow {
+   background-color: yellow;
+ }
+
+ .light-yellow {
+   background-color: lightyellow;
+ }
+
+ .orange {
+   background-color: orangered;
+ }
+
+ .light-orange {
+   background-color: orange;
+ }
+
+ .red {
+   background-color: red;
+ }
+
+ .light-red {
+   background-color: coral;
+ }

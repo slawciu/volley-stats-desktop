@@ -1,9 +1,10 @@
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      Volley Stats Here
+      <p>Łaziszczanki Stats</p>
+      slawomir.rudawski[at]gmail.com
     </div>
   );
 }

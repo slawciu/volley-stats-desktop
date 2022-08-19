@@ -1,0 +1,28 @@
+.players {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.player-number {
+  font-weight: 500;
+}
+
+.player-name, .action-name {
+  font-size: xx-small;
+}
+
+.players-in-game {
+  display: flex;
+  flex-direction: column;
+  max-width: 12vw;
+  height: 50vh;
+  justify-content: space-around;
+}
+
+.players-in-position {
+  display: flex;
+  flex-direction: row;
+}
+
+.players-in-game-container {
+}
