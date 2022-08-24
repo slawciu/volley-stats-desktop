@@ -1,0 +1,16 @@
+.coach-container {
+  padding: 10px;
+}
+
+.field-half {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1.5fr 1fr;
+}
+
+.field-halves-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2vw;
+}

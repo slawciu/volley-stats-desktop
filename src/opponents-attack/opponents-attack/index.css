@@ -1,0 +1,90 @@
+.oa-attack-zones {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.zone-button {
+  width: 30vw;
+  min-width: 10vw;
+  border-radius: 0 !important;
+}
+
+
+.zone-button-double {
+  width: 15vw ;
+  min-width: 8vw !important;
+  border-radius: 0 !important;
+}
+
+.oa-field-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.oa-first-line {
+  display: flex;
+  height: 10vh;
+  justify-content: stretch;
+}
+
+.oa-second-line {
+  display: flex;
+  height: 15vh;
+  justify-content: stretch;
+}
+
+.oa-net {
+  height: 0.5vh;
+  border-width: 2px;
+  border-color: darkgray;
+  border-style: dashed;
+  width: 95vw;
+}
+.oa-zone {
+  display: flex;
+  flex-direction: row;
+  width: 30vw;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.horizontal {
+  display: none !important;
+}
+
+@media (orientation:landscape) {
+  .horizontal {
+    display: block !important;
+  }
+}
+
+@media  (orientation:landscape) {
+  .oa-zone {
+    display: flex;
+    flex-direction: row;
+    width: 10vw;
+    border-style: solid;
+    border-width: 2px;
+  }
+
+
+
+  .zone-button-double {
+    width: 5vw;
+    min-width: 1px !important;
+    max-width: 10vw !important;
+    border-radius: 0 !important;
+  }
+  .oa-net {
+    width: 32vw;
+  }
+}
+
+.opponent-players {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}

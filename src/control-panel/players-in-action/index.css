@@ -1,0 +1,8 @@
+.players-in-action {
+  height: 118px;
+  display: flex;
+  scroll-behavior: auto;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  overflow: scroll;
+}

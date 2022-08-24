@@ -1,0 +1,24 @@
+.attack-zones {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 192px;
+}
+
+.attack-zones-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.first-line {
+  height: 40px;
+  display: flex;
+  justify-content: stretch;
+}
+
+.second-line {
+  height: 60px;
+  display: flex;
+  justify-content: stretch;
+}

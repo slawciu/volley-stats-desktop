@@ -2,9 +2,10 @@ const express = require("express");
 const cors = require("cors");
 
 const bodyParser = require("body-parser");
+const app = express();
 
 const http = require("http");
-const httpServer = http.createServer(express);
+const httpServer = http.createServer(app);
 const { Server } = require("socket.io");
 
 const GameModel = require("./database").Game;
@@ -40,14 +41,11 @@ const {
 
 const io = new Server(httpServer, {
   cors: {
-    origin: process.env.APP_URL
-      ? process.env.APP_URL.split(",")
-      : "http://localhost:3000",
+    origin: "*",
     methods: ["GET", "POST"],
   },
 });
 
-const app = express();
 const port = 3004;
 
 const corsOptions = {
@@ -438,10 +436,9 @@ io.on("connection", async (socket) => {
   });
 });
 
-const server = app.listen(port, () => {
+const server = httpServer.listen(port, () => {
   console.log(`Volley Score Local Server is running! (${port})`);
 });
-
 module.exports = {
   server,
 };

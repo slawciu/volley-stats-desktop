@@ -1,0 +1,16 @@
+.keyboard-container {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  flex-wrap: wrap;
+}
+
+.keyboard-display {
+  height: 1.5rem;
+  text-align: center;
+}
+
+.keyboard {
+  width: 200px;
+  align-self: center;
+}

@@ -1,0 +1,16 @@
+.actions-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}

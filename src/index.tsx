@@ -1,15 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from "./reportWebVitals";
+import App from "./App";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ControlPanel from "./control-panel";
+import OpponentsAttack from "./opponents-attack";
+import Display from "./display";
+import { Coach as OpponentsAttackCoach } from "./opponents-attack/coach";
+import { SocketContext, getClient } from "./context/socket";
+import Dashboard from "./dashboard";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <SocketContext.Provider value={getClient()}>
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/:gameId" element={<Display />} />
+          <Route path="/coach/:gameId" element={<OpponentsAttackCoach />} />
+          <Route path="/coach/" element={<OpponentsAttackCoach />} />
+          <Route path="/control-panel" element={<ControlPanel />} />
+          <Route path="/opponents-attack" element={<OpponentsAttack showGameSelector={true} />} />
+        </Routes>
+      </SocketContext.Provider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

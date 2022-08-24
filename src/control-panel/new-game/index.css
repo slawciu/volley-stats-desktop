@@ -1,0 +1,6 @@
+.players-draft {
+  flex-direction: column;
+  display: flex;
+  height: 31vh;
+  flex-wrap: wrap;
+}

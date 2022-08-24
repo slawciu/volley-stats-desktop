@@ -1,0 +1,32 @@
+.score-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  font-size: 6vw;
+}
+
+.small {
+  font-size: small;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10vw;
+  min-width: 20px;
+}
+
+.top-score {
+
+}
+
+.bottom-score {
+
+}
+
+.main-score {
+  font-weight: 500;
+}
